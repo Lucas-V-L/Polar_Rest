@@ -7,13 +7,13 @@
 		<title>Polar Rest - Sleep cool</title>
 		<link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./img/logo.png" type="image/x-icon">
 	</head>
 	<body>
 		<nav>
 			<div>
-				<a>One</a>
-				<a>Two</a>
+                <a href="./">Home</a>
+				<a href="./buy.html">About</a>
 			</div>
 			<div>
 				<img src="img/logo.png"/>
@@ -25,8 +25,8 @@
 					<h2>Cool Comfort, Perfect Sleep With Polar Rest</h2>
 					<p>A cooling pillowcase unlike any other</p>
 					<div class="buttons">
-						<button>Learn More</button>
-						<button>Buy</button>
+						<button onclick="location.href='#partThree'" type="button">Learn More</button>
+						<button onclick="location.href='./buy.html'" type="button">Buy</button>
 					</div>
 				</div>
 				<img src="img/pillow.png"/>
@@ -38,7 +38,7 @@
 				</div>
 				<img src="img/beads2.webp"/>
 			</div>
-			<div class="segment partThree center">
+			<div class="segment partThree center" id="partThree">
                 <div>
                     <img src="img/STEP1.jpeg"/>
                     <img src="img/STEP2.jpeg"/>
@@ -62,6 +62,43 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                 </div>
+                <div class="testimonial">
+                    <h4>Jerry Johnson</h4>
+                    <p>Polar Rest cured my cancer</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                 <div class="testimonial">
+                    <h4>Lois Griffin</h4>
+                    <p>Petah, the horse is here</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                 <div class="testimonial">
+                    <h4>Donald Trump</h4>
+                    <p>Love the Polar Rest pillow, it's the absolute best, there is nothing better. Experts are saying it cures covid</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                 <div class="testimonial">
+                    <h4>Ronald McDonald</h4>
+                    <p>I live in your nightmares and feed on your fear. Nightmares using the Polar Rest pillow are 10% more immersive than conventional pillows.</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                
             </div>
 			<div class="segment partFive center">
 				<div>
@@ -69,9 +106,13 @@
 					<h3>That is nearly 230,000 hours.</h3>
 					<p>Polar Rest is here to ensure that you are chilled and comfortable during these hours</p>
 				</div>
-				<img src="img/snowflake.png">
-
+				<img src="img/snowflake.jpg">
 			</div>
+            <div class="segment partSix center">
+                <div>
+                    <button class="bigboi">Buy Now!</button>
+                </div>
+            </div>
 		</main>
 		<script src="index.js"></script>
 	</body>

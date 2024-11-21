@@ -44,8 +44,10 @@ nav > div {
 }
 
 nav > div > a {
-	padding-inline: 2rem;
+	padding-inline: 1rem;
     font-size: max(3vh, 20px);
+    text-decoration: none;
+    z-index: 10000000;
 }
 
 .segment {
@@ -53,14 +55,16 @@ nav > div > a {
 	height: 100vh;
 	height: 100dvh;
 	position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .topBanner {
 	padding-top: max(min(20dvh, 20vw), 100px);
+    overflow: hidden;
 }
 
 .topBanner img {
-	float: right;
 	max-height: 100%;
 	max-width: 100%;
 }
@@ -88,7 +92,6 @@ nav > div > a {
 }
 
 .partTwo {
-	aspect-ratio: 5 / 2;
 	background-size: 100%;
 }
 
@@ -97,10 +100,12 @@ nav > div > a {
     grid-template-columns: 1fr;
     height: max(50dvh, 300px);
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .partThree > div {
     grid-template-columns: repeat(5, 1fr);
-	height: 100%;
+	height: calc(100% - 40px);
     width: auto;
     max-width: unset;
     white-space:nowrap;
@@ -123,8 +128,17 @@ nav > div > a {
 
 .partFour {
     height: auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
 }
+
+@media only screen and (max-width: 1500px) {
+    .partFour {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .testimonial {
     background-color: skyblue;
     border-radius: 20px;
@@ -150,4 +164,15 @@ button:hover {
     .center {
         grid-template-columns: 1fr;
     }
+}
+
+.partSix {
+    grid-template-columns: 1fr;
+}
+
+.bigboi { 
+    padding: 20px;
+    font-size: 10vw;
+    border-radius: 20px;
+    width: auto;
 }
