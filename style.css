@@ -53,14 +53,13 @@ nav > div > a {
 .segment {
 	width: 100%;
 	height: 100vh;
-	height: 100dvh;
 	position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .topBanner {
-	padding-top: max(min(20dvh, 20vw), 100px);
+	padding-top: max(min(20vh, 20vw), 100px);
     overflow: hidden;
 }
 
@@ -98,7 +97,7 @@ nav > div > a {
 .partThree {
     overflow: hidden;
     grid-template-columns: 1fr;
-    height: max(50dvh, 300px);
+    height: max(50vh, 300px);
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
